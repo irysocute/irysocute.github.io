@@ -233,3 +233,88 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-menu > span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu > span,
+.dropdown-menu > div {
+  cursor: pointer;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu > div {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.dropdown-menu > span:focus ~ div {
+  display: block;
+}
+
+.dropdown-menu > ul {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  transition: visibility 0.5s;
+  opacity: 0;
+}
+
+.dropdown-menu > span:focus ~ ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* The .sample-menu-style below is for illustration purpose.
+   Feel free to use different style. */
+
+.sample-menu-style > span {
+  font: 120% Arial;
+  color: darkgreen;
+}
+
+.sample-menu-style > span:hover {
+  opacity: 0.75;
+}
+
+.sample-menu-style > ul {
+  padding: 0;
+  margin-top: 2px;
+}
+
+.sample-menu-style li {
+  border: 1px solid #bbb;
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 0.2em 0.4em 0;
+  height: 1.5em;
+  background: #fffffb;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.sample-menu-style li:not(:first-child) {
+  border-top: none;
+}
+
+.sample-menu-style li:hover {
+  background: #f8f8f4;
+}
+
+.sample-menu-style a {
+  text-decoration: none;
+  color: #555;
+}
