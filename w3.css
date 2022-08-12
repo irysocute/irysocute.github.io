@@ -249,11 +249,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dropdown-menu > div {
   cursor: pointer;
   outline: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: #b85798;
 }
 
 .dropdown-menu > div {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #b85798;
   position: absolute;
   top: 0;
   left: 0;
