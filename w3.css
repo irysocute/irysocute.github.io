@@ -254,7 +254,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .dropdown-menu > div {
   background-color: #E0E0E0;
-  height:100%;
+  height:100;
   position: absolute;
   top: 0;
   left: 0;
