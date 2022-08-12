@@ -303,7 +303,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   height: 1.5em;
   background: #fffffb;
   white-space: nowrap;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: #b85798;
 }
 
 .sample-menu-style li:not(:first-child) {
