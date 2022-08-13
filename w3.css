@@ -268,7 +268,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .dropdown-menu > ul {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   visibility: hidden;
   transition: visibility 0.5s;
   opacity: 0;
@@ -317,8 +317,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .sample-menu-style a {
   text-decoration: none;
   color: #555;
-}
-
-.mucontent{
-z-index: 0;
 }
