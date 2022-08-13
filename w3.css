@@ -318,8 +318,3 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   text-decoration: none;
   color: #555;
 }
-
-.dropdown-menu .container-inner {
-position: relative;
-z-index: 0;
-}
