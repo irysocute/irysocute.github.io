@@ -319,3 +319,17 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   text-decoration: none;
   color: #555;
 }
+
+font-family: 'Kolker Brush', cursive;
+
+@font-face {
+  font-family: 'Kolker Brush', cursive;
+  src: url('../fonts/KolkerBrush-Regular.woff') format("woff"),
+         url('../fonts/KolkerBrush-Regular.ttf') format("truetype"),
+         url('../fonts/KolkerBrush-Regular.eot') format("embedded-opentype");
+}
+
+.flex-align-title span {
+  text-align: left;
+  display: inline-block;
+}
