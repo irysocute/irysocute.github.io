@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>IRyS AnniversaRyS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+  <title>IRyS AnniversaRyS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <script src="mobileMenu.js"></script>
 </head>
-<body>
+
 <body background="background.jpg">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-col">
-  <div class="w3-bar w3-pink w3-wide w3-padding w3-card" style="-webkit-tap-highlight-color:rgba(0,0,0,0);" onclick="return true">
-  <a class="w3-right w3-bar-item w3-text-pink"><b>AnniversaRyS</b></a>
-<!--  <a class="w3-bar-item w3-right"><span style="color:w3-pink">IRyStocrats</span></a>
-<!--    <a href="#home" class="w3-bar-item w3-button"><img src="button.png" style="width:10%"><b>IRyStocrats</b></a>
-    <!-- Float links to the right. Hide them on small screens -->
-<!--    <div class="w3-right w3-hide-small 3-col">
-      <a href="AnniversaRyS.html" class="w3-bar-item w3-button w3-text-white w3-col"><b>AnniversaRyS</b></a>
-      <a href="#Journey EP" class="w3-bar-item w3-button w3-text-white w3-col"><b>Journey EP</b></a>
-      <a href="#About us" class="w3-bar-item w3-button w3-text-white w3-col"><b>About us</b></a>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-bar w3-pink w3-wide w3-padding w3-card">
+    <a href="index.html"> <!-- w3-button for highlight -->
+      <img class="nav-icon" src="button.png">
+      <b>IRyStocrats</b>
+    </a>
+    <div class="desktop-menu w3-right w3-bar-item">
+      <a href="AnniversaRyS.html">AnniversaRyS</a>
+      <p class="separate-dots"> · </p>
+      <a href="Journey EP.html">Journey EP</a>
+      <p class="separate-dots"> · </p>
+      <a href="2023_IRyS_Birthday_Truck_Project.html">2023_IRyS_Birthday_Truck_Project</a>
     </div>
--->	
-<!--	<div style="-webkit-tap-highlight-color:rgba(0,0,0,0)" onclick="return true">
-      <!-- The dropdown menu begins -->
-      <div class="sample-menu-style dropdown-menu "  style="z-index: 10; position: absolute;">
-      <span tabindex="0" onclick="return true"><a class="w3-bar-item w3-button"><img src="button.png" style="width:10%"><b>IRyStocrats</b></a></span>
-        <div tabindex="0" onclick="return true"></div>
-          <ul>
-           <li><a href="AnniversaRyS.html" onclick="sampleMenu(this)"><b>AnniversaRyS</b></a></li>
-           <li><a href="Journey EP.html" onclick="sampleMenu(this)"><b>Journey EP</b></a></li>
-		   <li><a href="2023_IRyS_Birthday_Truck_Project.html" onclick="sampleMenu(this)"><b>2023 IRyS Birthday Truck Project</b></a></li>
-           <li><a href="#About us" onclick="sampleMenu(this)"><b>About us</b></a></li>
-          </ul>
-      </div>	  
-  </div>  
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width: 1500px;width:100vw" id="home">
-  <img class="w3-image" src="architect.jpg" alt="Architecture" style="width: 100%; height: 100% ;width:100vw">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-small w3-text-white"><span style="white-space:nowrap;  width:100vw" class="w3-padding w3-black w3-opacity-min"><b>Holo EN project:HOPE</b></span></h1><br>
-    <br>
-    <h1 class="w3-xxlarge w3-text-white w3-center w3-col"><span style=" max-width: 1500px;width:80vw"class="w3-padding w3-black w3-opacity-min w3-col"><b>IRyS 1st Anniversary fan's celebration site</b></span></h1>
+    <div class="mobile-menu w3-right w3-bar-item">
+      <img class="nav-icon" id="menu-open" src="menu-bar.png"/>
+      <img class="nav-icon" id="menu-close" src="close.png"/>
+      <div class="popup-menu" id="modal">
+        <a href="AnniversaRyS.html">AnniversaRyS</a>
+        <p class="separate-dots"> · </p>
+        <a href="Journey EP.html">Journey EP</a>
+        <p class="separate-dots"> · </p>
+        <a href="2023_IRyS_Birthday_Truck_Project.html">2023_IRyS_Birthday_Truck_Project</a>
+      </div>
+    </div>
   </div>
 
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width: 1500px;width:100vw" id="home">
+    <img class="w3-image" src="architect.jpg" alt="Architecture" style="width: 100%; height: 100% ;width:100vw">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-small w3-text-white"><span style="white-space:nowrap;  width:100vw"
+          class="w3-padding w3-black w3-opacity-min"><b>Holo EN project:HOPE</b></span></h1><br>
+      <br>
+      <h1 class="w3-xxlarge w3-text-white w3-center w3-col"><span style=" max-width: 1500px;width:80vw"
+          class="w3-padding w3-black w3-opacity-min w3-col"><b>IRyS 1st Anniversary fan's celebration site</b></span>
+      </h1>
+    </div>
 
-<!-- Page content -->
-<div class="w3-content w3-padding w3-col" style="max-width:1500px;">
 
-  <!-- About us Section -->
-  <div class="w3-container w3-padding-32 w3-pink" id="About us">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About us</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <p>About us <a href="https://twitter.com/HopeIrys" title="W3.CSS" target="_blank" class="w3-hover-text-green">IRySanctuary</a></p>
-  </div>
-  
-  <!-- Image of location/map -->
-  <div class="w3-container">
-  </div>
+    <!-- Page content -->
+    <div class="w3-content w3-padding w3-col" style="max-width:1500px;">
 
-<!-- End page content -->
-</div>
-</header>
+      <!-- About us Section -->
+      <div class="w3-container w3-padding-32 w3-pink" id="About us">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About us</h3>
+        <p>Lets get in touch and talk about your next project.</p>
+        <p>About us <a href="https://twitter.com/HopeIrys" title="W3.CSS" target="_blank"
+            class="w3-hover-text-green">IRySanctuary</a></p>
+      </div>
+
+      <!-- Image of location/map -->
+      <div class="w3-container">
+      </div>
+
+      <!-- End page content -->
+    </div>
+  </header>
 </body>
+
 </html>
