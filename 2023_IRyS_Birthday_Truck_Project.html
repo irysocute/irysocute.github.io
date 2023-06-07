@@ -8,12 +8,31 @@
 <body>
 <body background="background.jpg">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-pink w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><img src="button.png" style="width:10%"><b>IRyStocrats</b></a>
-  </div>
-</div>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-bar w3-pink w3-wide w3-padding w3-card">
+      <a href="index.html"> <!-- w3-button for highlight -->
+        <img class="nav-icon" src="button.png">
+        <b>IRyStocrats</b>
+      </a>
+      <div class="desktop-menu w3-right w3-bar-item">
+        <a href="AnniversaRyS.html">AnniversaRyS</a>
+        <p class="separate-dots"> · </p>
+        <a href="Journey EP.html">Journey EP</a>
+        <p class="separate-dots"> · </p>
+        <a href="2023_IRyS_Birthday_Truck_Project.html">2023_IRyS_Birthday_Truck_Project</a>
+      </div>
+      <div class="mobile-menu w3-right w3-bar-item">
+        <img class="nav-icon" id="menu-open" src="menu-bar.png"/>
+        <img class="nav-icon" id="menu-close" src="close.png"/>
+        <div class="popup-menu" id="modal">
+          <a href="AnniversaRyS.html">AnniversaRyS</a>
+          <p class="separate-dots"> · </p>
+          <a href="Journey EP.html">Journey EP</a>
+          <p class="separate-dots"> · </p>
+          <a href="2023_IRyS_Birthday_Truck_Project.html">2023_IRyS_Birthday_Truck_Project</a>
+        </div>
+      </div>
+    </div>
 
 <header class="w3-display-container w3-content w3-wide" style="max-width: 1500px;" id="home">
 
