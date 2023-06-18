@@ -1068,6 +1068,10 @@ a {
   -ms-transform: translate(-50%, -50%)
 }
 
+#journey-header {
+  top: 128px;
+}
+
 .w3-display-left {
   position: absolute;
   top: 50%;
@@ -2140,4 +2144,22 @@ a {
 .sample-menu-style a {
   text-decoration: none;
   color: #555;
+}
+
+.div1{
+z-index: 1; /* 將z-index設為1 */
+position:absolute;
+
+
+}
+.div2{
+position:absolute;
+z-index: 2; /* 將z-index設為1 */
+
+}
+
+.div3{
+position:absolute;
+z-index: 3; /* 將z-index設為1 */
+
 }
