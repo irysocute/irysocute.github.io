@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-top: 3rem;
     padding-bottom: 3rem;
     color: rgb(var(--bs-tertiary-color-rgb));
   }
@@ -32,7 +31,7 @@ body {
   
   /* Center align the text within the three columns below the carousel */
   .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
     text-align: center;
   }
   .marketing .col-lg-4 p {
