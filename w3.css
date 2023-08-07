@@ -2163,3 +2163,11 @@ position:absolute;
 z-index: 3; /* 將z-index設為1 */
 
 }
+
+.flex_container {
+    display:flex;
+}
+
+.flex_container {
+    flex-direction:row | row-reverse | column | column-reverse;
+}
