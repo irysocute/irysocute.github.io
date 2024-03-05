@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>IRyS 2024_IRyS_Birthday_Cake_Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+
+    <link rel="stylesheet" href="../../w3.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="2024_IRyS_Birthday_Cake_Project.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family= Kolker +Brush & display=swap');
+    </style>
+    <script src="../../mobileMenu.js"></script>
+</head>
+
+<body background="../../background.jpg">
+
+    <!-- <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-bar w3-pink w3-wide w3-padding w3-card">
+        <a href="../../index.html" style="color: black;"> <!-- w3-button for highlight -->
+            <img class="nav-icon" src="../../button.png">
+            <b>IRyStocrats</b>
+        </a>
+        <div class="desktop-menu w3-right w3-bar-item">
+            <a href="../../AnniversaRyS.html" style="color: black;">AnniversaRyS</a>
+            <p class=" separate-dots"> ． </p>
+            <a href="../../Journey EP.html" style="color: black;">Journey EP</a>
+            <p class="separate-dots"> ． </p>
+            <a href="./Pages/paper_craft/paper_craft_tutorial.html" style="color: black;">Project TruckRyS</a>
+            <p class="separate-dots"> · </p>
+            <a href="2024_IRyS_Birthday_Cake_Project.html" style="color: black;">2024 Birthday
+                Cake</a>
+        </div>
+        <div class="mobile-menu w3-right w3-bar-item">
+            <img class="nav-icon" id="menu-open" src="menu-bar.png" />
+            <img class="nav-icon" id="menu-close" src="close.png" />
+            <div class="popup-menu" id="modal">
+                <a href="AnniversaRyS.html">AnniversaRyS</a>
+                <p class="separate-dots"> ． </p>
+                <a href="Journey EP.html">Journey EP</a>
+                <p class="separate-dots"> ． </p>
+                <a href="./Pages/paper_craft/paper_craft_tutorial.html">Project TruckRyS</a>
+                <p class="separate-dots"> · </p>
+                <a href="2024_IRyS_Birthday_Cake_Project.html">2024 Birthday
+                    Cake</a>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------>
+
+    <button id="scrollButton" onclick="toggleBGM()">Pause<br> BGM</button>
+
+    <main>
+        <section class="text-center container">
+            <img src="assets/2024_IRyS_Birthday_Cake_Project_Header Picture(cropped).png" class="img-fluid"
+                alt="Happy 2024_IRyS_Birthday_Cake_Project">
+        </section>
+
+        <div class="album py-5 ">
+            <div class="container bg-light">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 row-cols-xl-4 g-4">
+
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="assets/Cake photos/20240222_171457 - Kongkong.jpg" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">Kongkong
+                                        </h5>
+                                    </div>
+                                    <div type="button" class="col-3 btn btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/20240222_170527 - Kongkong.wav')">
+                                        <img src="assets/volume-up-fill.svg" width="60%" alt="">
+                                    </div>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">Thank you for bringing us joy and your angelic singing voice, I
+                                    will continue to support your dreams no matter what!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/Cake photos/BD2024_Cake_czero_k - CZero K.png" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">CZero K
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/BD2024_Voice_czero_k - CZero K.mp3')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">Happy Birthday, IRyS! Wish you have another wonderful year that
+                                    you
+                                    can get more perms of songs and games, and hope you enjoy more anime and manga
+                                    as
+                                    well! Love you~</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="assets/Cake photos/P_20240222_130118~2 - 朱晃照.jpg" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">Kopiuly
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/Kopiuly - 朱晃照.mp3')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">Happy birthday IRyS. Hope you feel happy in 3 days: yesterday,
+                                    today, and tomorrow~</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="assets/Cake photos/irys&cake - 玹竹Shen Zu.jpg" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">竹
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/recording - 玹竹Shen Zu.mp3')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">When life makes me fall like force majeure Gravity, you bring
+                                    the
+                                    Hope Moment of my life. Till the end of me, I will witness you One step at a
+                                    time to
+                                    See the world. Happy bIRysday!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="assets/Cake photos/20240222_171457 - Kongkong.jpg" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">Kongkong
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/20240222_170527 - Kongkong.wav')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">Thank you for bringing us joy and your angelic singing voice, I
+                                    will continue to support your dreams no matter what!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/Cake photos/BD2024_Cake_czero_k - CZero K.png" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">CZero K
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/BD2024_Voice_czero_k - CZero K.mp3')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">Happy Birthday, IRyS! Wish you have another wonderful year that
+                                    you
+                                    can get more perms of songs and games, and hope you enjoy more anime and manga
+                                    as
+                                    well! Love you~</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="assets/Cake photos/P_20240222_130118~2 - 朱晃照.jpg" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">Kopiuly
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/Kopiuly - 朱晃照.mp3')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">Happy birthday IRyS. Hope you feel happy in 3 days: yesterday,
+                                    today, and tomorrow~</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="assets/Cake photos/irys&cake - 玹竹Shen Zu.jpg" alt="">
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title" style="margin-top: 0.3em;">竹
+                                        </h5>
+                                    </div>
+                                    <button type="button" class="col-3 btn btn-sm btn-outline-secondary"
+                                        onclick="playSound('assets/HBD_Recording/recording - 玹竹Shen Zu.mp3')">Audio</button>
+                                    <p class="col-1"></p>
+                                </div>
+
+                                <p class="card-text">When life makes me fall like force majeure Gravity, you bring
+                                    the
+                                    Hope Moment of my life. Till the end of me, I will witness you One step at a
+                                    time to
+                                    See the world. Happy bIRysday!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <audio autoplay loop id="background-music">
+        <source src='assets/One_Step_at_a_Time_guitar_by_Kalen.mp3' type='audio/mp3'>
+    </audio>
+    <!-- script below -->
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- BGM Autoplay and loop -->
+    <script>
+        var bgm = document.getElementById("background-music");
+        bgm.volume = 0.03;
+        bgm.loop = true;
+        bgm.muted = false;
+        bgm.play()
+    </script>
+
+    <!-- Pause and Play BGM -->
+    <script>
+        var bgmButton = document.getElementById("background-music");
+        var scrollButton = document.getElementById("scrollButton");
+        var isPaused = false;
+
+        function toggleBGM() {
+            if (isPaused) {
+                bgmButton.play();
+                console.log('Play BGM');
+                scrollButton.textContent = "BGM On";
+            } else {
+                bgmButton.pause();
+                console.log('Pause BGM');
+                scrollButton.textContent = "BGM Off";
+            }
+            isPaused = !isPaused;
+        }
+    </script>
+
+
+    <!-- Birthday Wishes Audio -->
+    <script>
+        function playSound(audioUrl) {
+            const audio = new Audio(audioUrl);
+            audio.volume = 0.5;
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.currentTime = 0;
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

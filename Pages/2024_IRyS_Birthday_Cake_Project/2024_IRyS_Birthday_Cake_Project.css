@@ -1,0 +1,22 @@
+#scrollButton {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #ce0808;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #scrollButton:hover {
+    background-color: #e23e3e;
+  }
+  
+  #background-music {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
