@@ -1,22 +1,44 @@
 #scrollButton {
     position: fixed;
-    top: 15%;
+    top: 35%;
     right: 0;
     transform: translateY(-50%);
-    background-color: #ce0808;
-    color: #fff;
     padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    text-wrap:nowrap;
+    width: 3em;
+    height: 7em;
+    
+    text-align: center;
+    writing-mode: vertical-rl
   }
   
-  #scrollButton:hover {
-    background-color: #e23e3e;
-  }
+  /* #scrollButton:hover {
+    
+  } */
   
   #background-music {
     position: absolute;
     top: 0;
     left: -9999px;
   }
+
+
+  .cardHover :hover {
+    margin-left: 18px;
+    margin-top: 18px;
+
+  }
+
+
+.blessingBtn{
+    
+}
+
+.blessingBtnText {
+    margin:0; padding: 2%; font-size: x-small;
+}
+
+.blessingBtnImg {
+    width: 50%;
+}
