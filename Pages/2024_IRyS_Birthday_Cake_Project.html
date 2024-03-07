@@ -1671,11 +1671,14 @@
     <!-- BGM Autoplay and loop -->
     <script>
         var initPlayFlag = false;
+
+        console.log("initPlayFlag in initPlayFlag", initPlayFlag);
         function playBGM() {
-            var bgm = document.getElementById("background-music");
-            bgm.volume = 0.3;
-            bgm.loop = true;
+
             if (initPlayFlag === false) {
+                var bgm = document.getElementById("background-music");
+                bgm.volume = 0.3;
+                bgm.loop = true;
                 bgm.muted = false;
                 initPlayFlag = true;
             }
@@ -1695,10 +1698,12 @@
                 bgmButton.play();
                 console.log('Play BGM');
                 scrollButton.textContent = "Pause BGM";
+                console.log("initPlayFlag in toggleBGM", initPlayFlag);
             } else {
                 bgmButton.pause();
                 console.log('Pause BGM');
                 scrollButton.textContent = "Play BGM";
+                console.log("initPlayFlag in toggleBGM", initPlayFlag);
             }
             isPaused = !isPaused;
         }
