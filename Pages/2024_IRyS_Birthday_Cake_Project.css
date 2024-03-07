@@ -3,19 +3,61 @@
     top: 35%;
     right: 0;
     transform: translateY(-50%);
-    padding: 5px 10px;
+    padding: 1px 0px;
     cursor: pointer;
     text-wrap:nowrap;
-    width: 3em;
+    width: 1.7em;
     height: 7em;
     text-align: center;
     writing-mode: vertical-rl;
     z-index: 1;
   }
 
-  @media screen {
+  @media (min-width: 576px){
+    /* CSS Style */
+    #scrollButton {
+      position: fixed;
+      top: 35%;
+      right: 0;
+      transform: translateY(-50%);
+      padding: 5px 10px;
+      cursor: pointer;
+      text-wrap:nowrap;
+      width: 2em;
+      height: 6em;
+      text-align: center;
+      writing-mode: vertical-rl;
+      z-index: 1;
+    }
+    }
     
-  }
+    /* EX : 當寬度 < 768px 時套用 */
+    @media (min-width: 768px){
+      #scrollButton {
+        position: fixed;
+        top: 35%;
+        right: 0;
+        transform: translateY(-50%);
+        padding: 5px 10px;
+        cursor: pointer;
+        text-wrap:nowrap;
+        width: 3em;
+        height: 7em;
+        text-align: center;
+        writing-mode: vertical-rl;
+        z-index: 1;
+      }
+    }
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px){
+
+
+
+}
   
   /* #scrollButton:hover {
     
