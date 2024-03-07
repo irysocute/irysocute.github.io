@@ -1662,17 +1662,25 @@
     </footer>
 
 
-    <audio autoplay muted loop id="background-music">
+    <audio autoplay loop id="background-music">
         <source src='assets/BGM - OSsaT guitar - arranged by Kalen.mp3' type='audio/mp3'>
     </audio>
     <!-- script below -->
     <script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
 
-    <!-- BGM Autoplay and loop -->
+    <!-- BGM initialization -->
+    <script>
+        var initBGM = document.getElementById("background-music");
+        initBGM.volume = 0.3;
+        initBGM.loop = true;
+        initBGM.muted = false;
+
+
+    </script>
+    <!-- Click anywhere to play bgm -->
     <script>
         var initPlayFlag = false;
-
-        console.log("initPlayFlag in initPlayFlag", initPlayFlag);
+        //console.log("initPlayFlag in initPlayFlag", initPlayFlag);
         function playBGM() {
 
             if (initPlayFlag === false) {
@@ -1681,9 +1689,9 @@
                 bgm.loop = true;
                 bgm.muted = false;
                 initPlayFlag = true;
+                bgm.play()
             }
 
-            bgm.play()
         }
     </script>
 
