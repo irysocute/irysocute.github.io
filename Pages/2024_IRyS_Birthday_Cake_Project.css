@@ -1,8 +1,7 @@
 #scrollButton {
     position: fixed;
-    top: 35%;
+    top: 50%;
     right: 0;
-    transform: translateY(-50%);
     padding: 1px 0px;
     cursor: pointer;
     text-wrap:nowrap;
@@ -19,14 +18,12 @@
       position: fixed;
       top: 35%;
       right: 0;
-      transform: translateY(-50%);
       padding: 3px 3px;
       cursor: pointer;
       text-wrap:nowrap;
       width: 2em;
       height: 6em;
       text-align: center;
-      writing-mode: vertical-rl;
       z-index: 1;
     }
     }
@@ -37,14 +34,13 @@
         position: fixed;
         top: 35%;
         right: 0;
-        transform: translateY(-50%);
+
         padding: 5px 10px;
         cursor: pointer;
         text-wrap:nowrap;
         width: 3em;
         height: 7em;
         text-align: center;
-        writing-mode: vertical-rl;
         z-index: 1;
       }
     }
