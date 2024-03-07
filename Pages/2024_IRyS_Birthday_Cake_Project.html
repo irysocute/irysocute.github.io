@@ -96,7 +96,7 @@
 
     <button type="button" class="btn btn-danger" id="scrollButton" onclick="toggleBGM()">Pause BGM</button>
 
-    <main>
+    <main onclick="playBGM()">
         <section class="text-center container">
             <div class="headerImg">
 
@@ -1670,18 +1670,25 @@
 
     <!-- BGM Autoplay and loop -->
     <script>
-        var bgm = document.getElementById("background-music");
-        bgm.volume = 0.3;
-        bgm.loop = true;
-        bgm.muted = false;
-        bgm.play()
+        var initPlayFlag = false;
+        function playBGM() {
+            var bgm = document.getElementById("background-music");
+            bgm.volume = 0.3;
+            bgm.loop = true;
+            if (initPlayFlag === false) {
+                bgm.muted = false;
+                initPlayFlag = true;
+            }
+
+            bgm.play()
+        }
     </script>
 
     <!-- Pause and Play BGM -->
     <script>
         var bgmButton = document.getElementById("background-music");
         var scrollButton = document.getElementById("scrollButton");
-        var isPaused = bgmButton.muted;
+        var isPaused = false;
 
         function toggleBGM() {
             if (isPaused) {
