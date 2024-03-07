@@ -8,15 +8,26 @@
     text-wrap:nowrap;
     width: 3em;
     height: 7em;
-    
     text-align: center;
-    writing-mode: vertical-rl
+    writing-mode: vertical-rl;
+    z-index: 1;
+  }
+
+  @media screen {
+    
   }
   
   /* #scrollButton:hover {
     
-  } */
-  
+  } */.headerImg {
+
+    background-image: none;
+
+
+  }
+
+
+
   #background-music {
     position: absolute;
     top: 0;
@@ -27,13 +38,12 @@
   .cardHover :hover {
     margin-left: 18px;
     margin-top: 18px;
-
   }
 
 
-.blessingBtn{
-    
-}
+/* .blessingBtn{
+
+} */
 
 .blessingBtnText {
     margin:0; padding: 2%; font-size: x-small;
