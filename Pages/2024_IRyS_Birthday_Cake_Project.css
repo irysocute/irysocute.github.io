@@ -10,11 +10,11 @@
     text-align: center;
     border-radius: 10px 0px  0px 10px;
     z-index: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
 
-.vertical-Text {
-    writing-mode: vertical-rl
-  }
+
 
   @media (min-width: 576px){
     /* CSS Style */
@@ -28,6 +28,7 @@
       width: 2em;
       height: 6em;
       text-align: center;
+      border-radius: 10px 0px  0px 10px;
       z-index: 1;
     }
     }
@@ -38,13 +39,13 @@
         position: fixed;
         top: 35%;
         right: 0;
-
         padding: 5px 10px;
         cursor: pointer;
         text-wrap:nowrap;
         width: 3em;
         height: 7em;
         text-align: center;
+        border-radius: 10px 0px  0px 10px;
         z-index: 1;
       }
     }
