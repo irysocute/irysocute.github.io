@@ -27,7 +27,6 @@
       width: 6em;
       height: 2em;
       text-align: center;
-      
       z-index: 1;
     }
     }
@@ -87,10 +86,71 @@
 
 } */
 
+
+
 .blessingBtnText {
-    margin:0; padding: 2%; font-size: x-small;
+  margin:0; padding: 2%; font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
 }
 
 .blessingBtnImg {
-    width: 50%;
+  width: 50%;
+}
+
+@media (min-width: 576px){
+  /* CSS Style */
+  .blessingBtnImg {
+    width: 30%;
+  }
+
+  .blessingBtnText {
+    margin:0; padding: 2%; font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+  }
+  
+  /* EX : 當寬度 < 768px 時套用 */
+  @media (min-width: 768px){
+    .blessingBtnImg {
+      width: 30%;
+    }
+
+    .blessingBtnText {
+      margin:0; padding: 2%; font-size: x-small;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      text-align: center;
+    }
+  }
+
+
+@media (min-width: 992px) {
+  .blessingBtnImg {
+    width: 30%;
+  }
+
+  .blessingBtnText {
+    margin:0; padding: 2%; font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px){
+
+
+
 }
