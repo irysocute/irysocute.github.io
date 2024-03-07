@@ -8,8 +8,12 @@
     width: 1.7em;
     height: 7em;
     text-align: center;
-    writing-mode: vertical-rl;
+    border-radius: 10px 0px  0px 10px;
     z-index: 1;
+  }
+
+.vertical-Text {
+    writing-mode: vertical-rl
   }
 
   @media (min-width: 576px){
