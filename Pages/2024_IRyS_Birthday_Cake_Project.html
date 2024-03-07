@@ -1668,6 +1668,9 @@
     <audio autoplay loop id="background-music">
         <source src='assets/BGM - OSsaT guitar - arranged by Kalen.mp3' type='audio/mp3'>
     </audio>
+
+    <audio id="myBirthdayBlessing" src=""></audio>
+
     <!-- script below -->
     <script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
 
@@ -1723,13 +1726,35 @@
 
     <!-- Birthday Wishes Audio -->
     <script>
-        function playSound(audioUrl) {
-            const audio = new Audio(audioUrl);
-            audio.volume = 1;
-            if (audio.paused) {
+
+        // function playSound(audioUrl) {
+        //     const audio = new Audio(audioUrl);
+        //     audio.volume = 1;
+        //     if (audio.paused) {
+        //         audio.play();
+        //     } else {
+        //         audio.currentTime = 0;
+        //     }
+        // }
+    </script>
+
+
+    <!-- Audio stop then play -->
+    <script>
+        let currentAudio = document.getElementById('myBirthdayBlessing');;
+        function playSound(audioSrc) {
+            const audio = document.getElementById('myBirthdayBlessing');
+            if (currentAudio) {
+                currentAudio.pause();
+            }
+            console.log(audio.src);
+            if (audioSrc !== audio.src) {
+                audio.src = audioSrc;
                 audio.play();
+                currentAudio = audio;
             } else {
-                audio.currentTime = 0;
+                audio.pause();
+                currentAudio = null;
             }
         }
     </script>
